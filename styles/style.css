@@ -1,5 +1,26 @@
 .hero {
     background-color: aquamarine;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.anim-item:not(:last-child) {
+    margin-bottom: 200px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.box {
+    width: 900px;
+    padding: 100px;
+    margin: 0 auto;
+    background-color: rgb(239, 227, 14);
+}
+
+.box:not(:last-child) {
+    margin-bottom: 300px;
 }
