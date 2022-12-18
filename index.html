@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Comandos76</title>
   </head>
@@ -19,10 +23,50 @@
       </section>
       <section>
         <ul>
-          <li><img src="./img/cat1.jpg" alt="" /></li>
-          <li><img src="./img/cat2.jpg" alt="" /></li>
-          <li><img src="./img/cat3.jpg" alt="" /></li>
+          <li
+            class="wow anim-item animate__animated animate__fadeInTopRight"
+            data-wow-duration="2s"
+            data-wow-delay="5s"
+          >
+            <img src="./img/cat1.jpg" alt="" width="300" />
+          </li>
+          <li class="wow anim-item animate__animated animate__fadeInTopRight">
+            <img src="./img/cat2.jpg" alt="" width="300" />
+          </li>
+          <li class="wow anim-item animate__animated animate__fadeInTopRight">
+            <img src="./img/cat3.jpg" alt="" width="300" />
+          </li>
         </ul>
+      </section>
+      <section>
+        <div
+          class="box wow animate__animated animate__backInLeft"
+          data-wow-duration="4s"
+        >
+          <img src="./img/cat1.jpg" alt="" width="500" />
+        </div>
+
+        <div
+          class="box wow animate__animated animate__backInRight"
+          data-wow-duration="4s"
+        >
+          <img src="./img/cat2.jpg" alt="" width="500" />
+        </div>
+
+        <div class="box wow animate__animated animate__backInLeft">
+          <img src="./img/cat3.jpg" alt="" width="500" />
+        </div>
+
+        <div
+          class="wow animate__animated animate__rotateInUpRight"
+          data-wow-delay="3s"
+        >
+          <img src="./img/cat2.jpg" alt="" width="500" />
+        </div>
+
+        <div class="box wow animate__animated animate__backInRight">
+          <img src="./img/dog1.webp" alt="" width="500" />
+        </div>
       </section>
     </main>
     <footer>
@@ -33,5 +77,9 @@
         assumenda pariatur, sed numquam?
       </p>
     </footer>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
